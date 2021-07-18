@@ -9,9 +9,6 @@ public class Main {
         String data = new String(Files.readAllBytes(Paths.get("C:\\Users\\pkoukios\\OneDrive - SWORD SA\\Documents\\adventOfCode17.txt")));
         String[] lines = data.split("\n");
 
-//        Arrays.stream(lines)
-//                .forEach(System.out::println);
-
         int xMin = -1;
         int xMax = lines[0].length() - 1;
         int yMin = -1;
@@ -30,11 +27,6 @@ public class Main {
                 }
             }
         }
-
-//        activeCubes.stream()
-//                .sorted(comparing(Position::getY)
-//                        .thenComparing(Position::getX))
-//                .forEach(System.out::println);
 
         for (int cycle = 0; cycle < 6; cycle++) {
             Set<Position> updatedActiveCubes = new HashSet<>();
